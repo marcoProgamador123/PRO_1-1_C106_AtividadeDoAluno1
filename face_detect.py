@@ -1,10 +1,10 @@
 import cv2
 
-img = cv2.imread("boy.jpg")
+img = cv2.imread("C:/Users/MARCO ANTONIO/Documents/Python/Aula106/pessoas.jpg")
 
 gray= cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('C:/Users/MARCO ANTONIO/Documents/Python/Aula106/haarcascade_frontalface_default.xml')
 
 faces = face_cascade.detectMultiScale(gray)
 print(faces)
